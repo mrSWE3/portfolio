@@ -1,16 +1,15 @@
 @import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@theme {
+  /* Colors */
+  --color-primary: hsl(187, 92%, 43%); /* cyan-ish */
+  --color-secondary: hsl(237, 82%, 62%); /* indigo-ish */
+  --color-text: hsl(0, 0%, 100%); /* white */
+  --color-bg: hsl(0, 0%, 14%); /* dark gray */
+}
 
 @layer base {
   :root {
-    /* Colors */
-    --color-primary: hsl(187, 92%, 43%); /* cyan-ish */
-    --color-secondary: hsl(237, 82%, 62%); /* indigo-ish */
-    --color-text: hsl(0, 0%, 100%); /* white */
-    --color-bg: hsl(0, 0%, 14%); /* dark gray */
-
     /* Typography */
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;

@@ -96,7 +96,7 @@ export default function App() {
               <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                 Hi — I'm Your Name
               </h1>
-              <p className="text-primary">
+              <p className="">
                 I build fast, accessible and delightful web applications using
                 modern tools. I focus on front‑end engineering, design systems,
                 and shipping production quality code.
@@ -106,24 +106,13 @@ export default function App() {
                   (t) => (
                     <span
                       key={t}
-                      className="px-3 py-1 text-sm rounded-full border text-primary">
+                      className="px-3 py-1 text-sm rounded-full border ">
                       {t}
                     </span>
                   )
                 )}
               </div>
-              <div className="mt-6 flex justify-center gap-4 flex-wrap">
-                <a
-                  href="#projects"
-                  className="bg-primary text-dark px-4 py-2 rounded-md font-medium shadow hover:brightness-95 focus:outline-none focus:ring-2 focus:ring-primary/50">
-                  View projects
-                </a>
-                <a
-                  href="#contact"
-                  className="text-sm px-4 py-2 rounded-md border border-white/10 text-textColor hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-primary/50">
-                  Contact
-                </a>
-              </div>
+              <div className="mt-6 flex justify-center gap-4 flex-wrap"></div>
             </div>
           </section>
           {/* About */}
