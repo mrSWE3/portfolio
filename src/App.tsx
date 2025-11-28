@@ -62,7 +62,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-stretch text-textColor theme-solarized">
+    <div className="theme-brand min-h-screen flex flex-col items-stretch">
       {/* Header */}
       <header className="sticky top-0 backdrop-blur-sm">
         <div className="site flex items-center justify-between px-6 py-4">
@@ -96,7 +96,7 @@ export default function App() {
               <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                 Hi — I'm Your Name
               </h1>
-              <p className="">
+              <p className="theme-lights text-primary">
                 I build fast, accessible and delightful web applications using
                 modern tools. I focus on front‑end engineering, design systems,
                 and shipping production quality code.
@@ -120,7 +120,7 @@ export default function App() {
             <Card
               className="p-6 bg-white/3 rounded-lg border border-white/6"
               title="About me">
-              <p>
+              <p className="text-primary">
                 I'm a developer focused on performant front-ends and great UX. I
                 collaborate with designers and backend engineers to ship
                 features that delight users.

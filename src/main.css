@@ -1,13 +1,51 @@
 @import "tailwindcss";
-
+/* Default theme */
+/* Default / fallback theme */
 @theme {
-  /* Colors */
-  --color-primary: hsl(187, 92%, 43%); /* cyan-ish */
-  --color-secondary: hsl(237, 82%, 62%); /* indigo-ish */
-  --color-text: hsl(0, 0%, 100%); /* white */
-  --color-bg: hsl(0, 0%, 14%); /* dark gray */
+  --color-primary: #f0be99; /* light orange */
+  --color-secondary: #7554f3; /* indigo */
+  --color-text: #ffffff; /* white */
+  --color-bg: #242424; /* dark gray */
 }
 
+/* Theme variants */
+@layer theme {
+  /* Dark theme */
+  .theme-dark {
+    --color-primary: #f0be99;
+    --color-secondary: #7554f3;
+    --color-text: #ffffff;
+    --color-bg: #242424;
+  }
+
+  /* Light theme */
+  .theme-light {
+    --color-primary: #ff6ec7; /* pink */
+    --color-secondary: #5e5ce6; /* lighter indigo */
+    --color-text: #242424;
+    --color-bg: #ffffff;
+  }
+
+  /* Solarized theme */
+  .theme-solarized {
+    --color-primary: #268bd2; /* blue */
+    --color-secondary: #d33682; /* pink */
+    --color-text: #586e75; /* base text */
+    --color-bg: #fdf6e3; /* light background */
+  }
+
+  /* Brand theme */
+  .theme-brand {
+    --color-primary: #ff9900; /* orange */
+    --color-secondary: #cc0000; /* red */
+    --color-text: #ffffff;
+    --color-bg: #101010; /* almost black */
+  }
+}
+
+:root {
+  --color-funny: #df9;
+}
 @layer base {
   :root {
     /* Typography */
@@ -70,26 +108,4 @@
     outline: 4px auto var(--color-primary);
     border-color: var(--color-primary);
   }
-}
-
-/* Theme variants */
-.theme-light {
-  --color-primary: hsl(187, 92%, 43%);
-  --color-secondary: hsl(237, 82%, 62%);
-  --color-text: hsl(210, 15%, 28%);
-  --color-bg: hsl(0, 0%, 100%);
-}
-
-.theme-dark {
-  --color-primary: hsl(187, 92%, 43%);
-  --color-secondary: hsl(237, 82%, 62%);
-  --color-text: hsl(0, 0%, 100%);
-  --color-bg: hsl(0, 0%, 14%);
-}
-
-.theme-solarized {
-  --color-primary: hsl(204, 63%, 49%);
-  --color-secondary: hsl(328, 74%, 52%);
-  --color-text: hsl(196, 14%, 46%);
-  --color-bg: hsl(45, 100%, 95%);
 }
